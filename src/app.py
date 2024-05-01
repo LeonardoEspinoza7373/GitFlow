@@ -2,9 +2,9 @@ from flask import Flask
 
 app = Flask(__name__)
 
-@app.route('/')
+@app.route('/hello')
 def index():
-    return 'Proyecto Basico'
+    return 'hello world'
 
 @app.route('/suma/<int:a>/<int:b>')
 def suma(a: int, b: int):
